@@ -39,11 +39,11 @@ void loop() {
 
   if (distance > limite) {
     aheadInteraction ++;
-    move(AHEAD, speedL, 0); 
-    
+    move(AHEAD, speedL, 0);
+
   } else {
     move(STOP, 0, 0);
-    
+
     aheadInteraction = 0;
     look(LEFT);
     delay(500);
@@ -53,7 +53,7 @@ void loop() {
       look(AHEAD);
       move(LEFT, speedM, 500);
 
-      
+
     } else {
       look(RIGHT);
       delay(500);
@@ -62,7 +62,7 @@ void loop() {
       if (distance > limite) {
         move(RIGHT, speedM, 500);
         look(AHEAD);
-        
+
       } else {
         shakeHead();
         delay(500);
@@ -72,7 +72,7 @@ void loop() {
         look(AHEAD);
         move(lastTurn180, speedM, 900);
       }
-      
+
     }
 
     delay(200);
@@ -97,7 +97,7 @@ void look(int direction) {
   } else if (direction == RIGHT) {
     angle = 45;
   }
-  
+
   head.write(angle);
 }
 
@@ -137,17 +137,17 @@ void move(int direction, int speed, int time) {
     motorR.setSpeed(speed);
   }
 
-//  if (direction == LEFT || direction == RIGHT) {
-//    delay(time);
-//    motorL.run(RELEASE);
-//    motorR.run(RELEASE);
-//  }
-  
+  //  if (direction == LEFT || direction == RIGHT) {
+  //    delay(time);
+  //    motorL.run(RELEASE);
+  //    motorR.run(RELEASE);
+  //  }
+
 }
 
 void shakeHead() {
   float angle = head.read();
-  
+
   int step = 20;
   int duration = 100;
 
