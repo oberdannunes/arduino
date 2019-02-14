@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "C:\\Users\\oberdan.nunes\\Documents\\Arduino\\libraries\\MsTimer2",
+                "C:\\Users\\oberdan.nunes\\Documents\\Arduino\\libraries\\HCSR04_ultrasonic_sensor\\src",
+                "C:\\Program Files (x86)\\Arduino\\tools\\**",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\**",
+                "C:\\Users\\oberdan.nunes\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
+                "C:\\Users\\oberdan.nunes\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.0\\**",
+                "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\include\\avr\\**",
+                "C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include"
+            ],
+            "forcedInclude": [
+                "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
+            ],
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}
