@@ -16,8 +16,15 @@ void Head::attach(int pinH, int pinV, int pinUT, int pinUE) {
 }
 
 void Head::moveHead(int h, int v) {
-    _headH.write(h);
-    _headV.write(v);
+    if (h != _hPosition) {
+        _hPosition = h;
+        _headH.write(h);
+    }
+    
+    if (v != _vPosition) {
+        _vPosition = v;
+        _headV.write(v);
+    }
 }
 
 void Head::center() {

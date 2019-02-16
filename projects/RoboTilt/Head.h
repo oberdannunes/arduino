@@ -19,6 +19,8 @@ class Head {
         int _pinUT;
         int _pinUE;
         HCSR04 *_ultrassonic;
+        int _hPosition = -1;
+        int _vPosition = -1;
 };
 
 #endif
